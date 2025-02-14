@@ -4,7 +4,7 @@ A modern financial SaaS platform built with Next.js that allows users to connect
 
 ## Features
 
-- Secure SSR authentication with input validation
+- Secure Aadhar/PAN authentication with input validation
 - Multiple bank account integration via Plaid
 - Real-time transaction monitoring and updates
 - Inter-account fund transfers using Dwolla
