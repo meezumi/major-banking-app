@@ -27,18 +27,7 @@ A modern financial SaaS platform built with Next.js that allows users to connect
 
 ## Setup Instructions
 
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/banking.git
-cd banking
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Configure environment variables in `.env`:
+1. Configure environment variables in `.env`:
 ```env
 #NEXT
 NEXT_PUBLIC_SITE_URL=
@@ -66,12 +55,12 @@ DWOLLA_BASE_URL=https://api-sandbox.dwolla.com
 DWOLLA_ENV=sandbox
 ```
 
-4. Start the development server:
+2. Start the development server:
 ```bash
 npm run dev
 ```
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Required External Services
 
