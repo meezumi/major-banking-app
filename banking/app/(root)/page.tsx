@@ -8,6 +8,12 @@ import { getLoggedInUser } from '@/lib/actions/user.actions';
 const Home = async ({ searchParams: { id, page } }: SearchParamProps) => {
   const currentPage = Number(page as string) || 1;
   const loggedIn = await getLoggedInUser();
+
+  if (!loggedIn) {
+    console.error("User is not logged in.");
+    return;
+  }
+
   const accounts = await getAccounts({ 
     userId: loggedIn.$id 
   })
@@ -18,6 +24,11 @@ const Home = async ({ searchParams: { id, page } }: SearchParamProps) => {
   const appwriteItemId = (id as string) || accountsData[0]?.appwriteItemId;
 
   const account = await getAccount({ appwriteItemId })
+
+  console.log({
+    accountsData,
+    account
+  })
 
   return (
     <section className="home">
